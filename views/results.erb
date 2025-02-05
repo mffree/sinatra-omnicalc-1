@@ -1,0 +1,22 @@
+
+<h1><%= @result_name %></h1> Results
+
+<div>
+  <p>
+    <% @inputs.keys.each do |a_key| %>
+    <%= a_key.upcase %>  
+  </p>
+  <p>
+    <%= @inputs.fetch(a_key) %>
+  </p>
+    <% end %>
+
+  <p>
+    <%= @result_name.upcase %>
+  </p>
+
+  <p>
+    <%= @result %>
+  </p>
+
+</div>
