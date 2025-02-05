@@ -1,10 +1,10 @@
 
-<h1><%= @result_name %></h1> Results
+<h1><%= @result_name %> Results</h1>
 
 <div>
   <p>
     <% @inputs.keys.each do |a_key| %>
-    <%= a_key.upcase %>  
+    <%= a_key.capitalize %>  
   </p>
   <p>
     <%= @inputs.fetch(a_key) %>
@@ -12,7 +12,7 @@
     <% end %>
 
   <p>
-    <%= @result_name.upcase %>
+    <%= @result_name.capitalize %>
   </p>
 
   <p>
@@ -20,3 +20,5 @@
   </p>
 
 </div>
+
+<a href="/square_root/results">Calculate another square root</a>

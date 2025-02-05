@@ -1,0 +1,24 @@
+
+<h1>Random Results</h1>
+
+<div>
+  <p>
+    <% @inputs.keys.each do |a_key| %>
+    <%= a_key.capitalize %>  
+  </p>
+  <p>
+    <%= @inputs.fetch(a_key) %>
+  </p>
+    <% end %>
+
+  <p>
+    <%= @result_name.capitalize %>
+  </p>
+
+  <p>
+    <%= @result %>
+  </p>
+
+</div>
+
+<a href="/random/results">Calculate another random number</a>

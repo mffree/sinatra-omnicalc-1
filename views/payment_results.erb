@@ -1,0 +1,25 @@
+
+<h1><%= @result_name %> Results</h1>
+
+<div>
+  <p>APR</p>
+  <p><%= @inputs["apr"].to_f.to_fs(:percentage, {:precision => 4}) %></p>
+
+  <p>Number of years</p>
+  <p><%= @inputs["years"] %></p>
+
+  <p>Principal</p>
+  <p><%= @inputs["principal"].to_f.to_fs(:currency) %></p>
+  
+
+  <p>
+    <%= @result_name.capitalize %>
+  </p>
+
+  <p>
+    <%= @result.to_fs(:currency) %>
+  </p>
+
+</div>
+
+<a href="/payment/results">Calculate another payment</a>
